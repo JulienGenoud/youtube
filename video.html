@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture vidéo - YouTube Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Même en-tête que index.html -->
+    </header>
+    <main class="video-page">
+        <div class="video-player">
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <h1 id="video-title">Titre de la vidéo</h1>
+            <div class="video-info">
+                <span id="video-views">1 234 567 vues</span>
+                <div class="video-actions">
+                    <button><i class="fas fa-thumbs-up"></i> 10K</button>
+                    <button><i class="fas fa-thumbs-down"></i> 100</button>
+                    <button><i class="fas fa-share"></i> Partager</button>
+                    <button><i class="fas fa-save"></i> Enregistrer</button>
+                </div>
+            </div>
+        </div>
+        <div class="video-sidebar">
+            <!-- Les vidéos suggérées seront insérées ici par JavaScript -->
+        </div>
+        <div class="comments-section">
+            <h2>Commentaires</h2>
+            <!-- Les commentaires seront insérés ici par JavaScript -->
+        </div>
+    </main>
+    <script src="js/video.js"></script>
+</body>
+</html>
+    
