@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video</title>
+</head>
+<body>
+    <h1>Upload a Video</h1>
+    <form id="uploadForm">
+        <input type="file" name="file" accept=".mp4,.avi,.mov,.webm">
+        <input type="submit" value="Upload">
+    </form>
+    <a href="index.html">Back to home</a>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Dans une version complète, cette fonction téléchargerait la vidéo sur un serveur.');
+            // Redirection vers la page d'accueil
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
+    

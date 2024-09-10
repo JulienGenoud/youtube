@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader une vidéo - YouTube Clone</title>
+</head>
+<body>
+    <h1>Uploader une vidéo</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".mp4,.avi,.mov,.webm">
+        <input type="submit" value="Uploader">
+    </form>
+    <a href="{{ url_for('index') }}">Retour à l'accueil</a>
+</body>
+</html>
